@@ -5,26 +5,30 @@ public class Palindrome {
         /*
           If a String is reversed and it remains unchanged, that is called Palindrome. For example, MOM,DAD,MADAM are
           Palindrome. So write java code to check if a given String is Palindrome or not.
-//         */
-//        String s = "MOM";
-//        String reverse = "";
-//        String d = "QUAZI";
-//        String back = "";
-//        char[] word = s.toLowerCase().toCharArray();
-//        for( int i = s.length()-1; i>=0;i--){
-//            reverse = reverse + s.charAt(i);
-//            for (int j = d.length()-1 ; j >= 0 ; j--) {
-//                back = back + d.charAt(j);
-//            }
-//
-//        }
-//        if(s.equals(reverse) && d.equals(back)){
-//            System.out.println(s + "--word is a palindron");
-//            System.out.println(d + "--word is a palindron");
-//        } else {
-//            System.out.println(s + "--word is not a palindron");
-//            System.out.println(d + "--word is not a palindron");
-//        }
+         */
+        String s = "MOM";
+        String reverse = "";
+        String d = "QUAZI";
+        String back = "";
+        char[] word = s.toLowerCase().toCharArray();
+        for (int i = s.length() - 1; i >= 0; i--) {
+            reverse = reverse + s.charAt(i);
+            for (int j = d.length() - 1; j >= 0; j--) {
+                back = back + d.charAt(j);
+            }
+
+        }
+        if (s.equals(reverse)) {
+            System.out.println(s + "--word is a palindron");
+
+        } else {
+            System.out.println(s + "--word is not a palindron");
+        }
+        if (d.equals(back))
+            System.out.println(d + "--word is a palindron");
+        else
+            System.out.println(d + "--word is not a palindron");
+
 
 
         isPalindrome("MADAM");
