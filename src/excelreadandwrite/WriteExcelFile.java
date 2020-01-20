@@ -12,7 +12,7 @@ import java.io.IOException;
 public class WriteExcelFile {
 
 
- private static final String FILE_NAME = System.getProperty("user.dir") + "/DataTest/Sample.xlsx";
+ private static final String FILE_NAME = System.getProperty("user.dir") + "/src/Data/Quazi2.xlsx";
 
  public static void main(String[] args) {
 
@@ -22,13 +22,11 @@ public class WriteExcelFile {
   XSSFSheet sheet = workbook.createSheet("Datatypes");
 
   Object[][] datatypes = {
-          { "Datatype", "Type", "Size(in bytes)" },
-          { "int", "Primitive", 2 },
-          { "float", "Primitive", 4 },
-          { "double", "Primitive", 8 },
-          { "char", "Primitive", 1 },
-          { "String", "Non-Primitive", "No fixed size" },
-          { "Zea", "Is Good", "Student" }
+          { "Name",     "CoreModule", "JavaModule",  "Status " },
+          { "Quazi",    "BoothCamp",  "BoothCapm" ,   "Done " },
+          { "Rezowan",  "BoothCamp",  "BoothCapm" ,   "Done " },
+          { "Shuvro",   "BoothCamp",  "BoothCapm" ,   "Done " },
+          { "Kollol",   "BoothCamp",  "BoothCapm" ,   "Done " },
 
   };
 
@@ -81,7 +79,7 @@ public class WriteExcelFile {
 
 
 
- }
+}
 
 
 
